@@ -1,0 +1,17 @@
+{
+  "name": "sitebm",
+  "main": "index.js",
+  "authors": [
+    "Bruno Mello <sbrunomello@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
