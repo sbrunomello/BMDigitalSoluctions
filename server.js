@@ -22,3 +22,6 @@ app.use(express.static(__dirname + '/views'));
 //Exporta os módulos
 module.exports.socketServer = io;
 module.exports.webServer = httpServer;
+
+var porta = process.env.PORT || 8080;
+app.listen(porta);
