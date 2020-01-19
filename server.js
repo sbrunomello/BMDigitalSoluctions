@@ -16,12 +16,13 @@ var express = require('express'),
   io = socketio.listen(httpServer)
 ;
  
-//Diz ao Express que o diretório web contém conteúdos estáticos
-app.use(express.static(__dirname + '/views'));
+var app = express()
+  .use(express.static(__dirname + '/views'))
+  .listen(process.env.PORT || 5000);
+// //Diz ao Express que o diretório web contém conteúdos estáticos
+// app.use(express.static(__dirname + '/views'));
  
 //Exporta os módulos
 module.exports.socketServer = io;
 module.exports.webServer = httpServer;
 
-var porta = process.env.PORT || 8080;
-app.listen(porta);

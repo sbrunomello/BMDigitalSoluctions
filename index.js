@@ -7,6 +7,3 @@ socketServer = Server.socketServer,
 //Carrega o objeto httpServer
 webServer = Server.webServer;
 
-  
-//Inicia o web server na porta 9000
-webServer.listen(9000);
