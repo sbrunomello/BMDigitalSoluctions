@@ -3,8 +3,8 @@ process.title = 'TTT Server';
 //Importando ExpressJS
 var express = require('express'),
    
-  //Importando Socket.IO
-  socketio = require('Socket.IO'),
+  // //Importando Socket.IO
+  // socketio = require('Socket.IO'),
  
   //Criando uma instancia do ExpressJS
   app = express(),
@@ -12,8 +12,8 @@ var express = require('express'),
   //Criando um HTTP Server a partir do ExpressJS
   httpServer = require('http').createServer(app),
  
-  //Utilizando a mesma porta do HTTP Server para o Socket.IO
-  io = socketio.listen(httpServer)
+  // //Utilizando a mesma porta do HTTP Server para o Socket.IO
+  // io = socketio.listen(httpServer)
 ;
  
 var app = express()
@@ -22,7 +22,7 @@ var app = express()
 // //Diz ao Express que o diretório web contém conteúdos estáticos
 // app.use(express.static(__dirname + '/views'));
  
-//Exporta os módulos
-module.exports.socketServer = io;
-module.exports.webServer = httpServer;
+// //Exporta os módulos
+// module.exports.socketServer = io;
+// module.exports.webServer = httpServer;
 
